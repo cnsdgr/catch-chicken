@@ -1,0 +1,45 @@
+<html>
+    <head><meta charset="utf-8>">
+        <title></title>
+    <style>
+       .a{
+        width: 500px;
+        height: 500px;
+        
+        }
+        #resim{
+            position: absolute;
+
+        }
+
+    </style>
+    <script>
+        function ust(){
+            var tavuk=document.getElementById('resim');
+            var xpos=parseInt(Math.random()*1000);
+			var ypos=parseInt(Math.random()*800);
+            tavuk.style.left=xpos +"px";
+			tavuk.style.top =ypos+"px";
+			tavuk.style.width=this.clientWidth+10+"px";
+			tavuk.style.height=this.clientHeight+10+"px";
+
+        }
+
+
+    </script>   
+    
+    
+    
+    </head>
+<body>
+<h3>Tavuğu yakala!</h3>
+<div class="a">
+    <img src="tavukk.jpg" width="100px;" height="100px;" onmouseover="ust();" id="resim">
+
+
+
+</div>
+
+</body>
+
+</html>
